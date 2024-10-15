@@ -5,8 +5,35 @@ The inner join is used to combine rows from two or more tables based on a simila
 Syntax:  
 SELECT<table1.column1>,<table1.column2>  
 FROM table1 INNER JOIN table2    
-WHERE [condition];
-GROUP BY  <group-by-column-name>
+
+### Example:
+Residents table  
+![Residents table](images/residents-table.PNG)  
+cities table  
+![cities table](images/cities%20table.PNG)  
+inner join    
+![inner join](images/inner%20join.PNG)
+
+## 2.Left Join  
+The left keyword returns all records from the left table (residents table) and matching records from the right table (cities table)
+syntax:  
+SELECT column_name(s)  
+FROM table1  
+LEFT JOIN table2  
+ON table1.column_name = table2.column_name;
+### Example
+
+![Left join](images/Left%20join.PNG)
+## 3.Right join
+The right join key word returns all records from the cities table and the matching records from the residents table.
+syntax:  
+SELECT column_name(s)  
+FROM cities  
+RIGHT JOIN residents
+ON table1.column_name = table2.column_name;
+ ### Example
+ ![Right join](images/Right%20join.PNG)
+
 ## ACID PROPERTIES
 ACID is abbreviation for ATOMICITY,CONSISTENCY,ISOLATION and DURABILITY
 Example:
