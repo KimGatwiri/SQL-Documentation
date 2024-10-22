@@ -20,12 +20,12 @@ A table is said to be in 2NF if it meets the following criteria:
 -It has no partial dependency. That is, all non-key attributes are fully dependent on a primary key.  
 -In the current table, Student_Name and Major depend only on Student_ID, not the combination of Student_ID and Course_ID. To fix this, we decompose the table.  
 Example  
-![students table](images/students%202.PNG)   
-students table 
-![Courses table](images/courses.PNG)  
-courses table  
-![students table](images/enrollments.PNG)
-
+![students table](images/students%202.PNG)       
+students table     
+![Courses table](images/courses.PNG)      
+courses table    
+![students table](images/enrollments.PNG)    
+Enrolment table    
 ### Third Normal Form (3NF)  
 3NF requires:  
 
